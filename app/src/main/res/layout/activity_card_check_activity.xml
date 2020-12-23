@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".card_check_activity">
+
+
+    <LinearLayout
+        android:id="@+id/linearlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:orientation="vertical">
+        <LinearLayout
+        android:id="@+id/linearlay7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        tools:ignore="MissingConstraints"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtext_cardno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Credit Card No."
+            android:background="@drawable/style_edtext"/>
+        <TextView
+            android:id="@+id/invalid_cardno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invalid credit card no."
+            android:visibility="invisible"
+            android:textColor="@color/red"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearlay1"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/linearlay2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+        <EditText
+            android:background="@drawable/style_edtext"
+            android:id="@+id/edtext_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="MM/YY" />
+        <TextView
+            android:id="@+id/invalid_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="Invalid date"
+            android:textColor="@color/red"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearlay3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            tools:ignore="MissingConstraints"
+            android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtext_cvv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/style_edtext"
+            android:hint="CVV" />
+        <TextView
+            android:id="@+id/invalid_cvv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invalid security no."
+            android:visibility="invisible"
+            android:textColor="@color/red"/>
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlay4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            tools:ignore="MissingConstraints"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/linearlay5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:background="@drawable/style_edtext"
+                    android:id="@+id/edtext_fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="First Name" />
+                <TextView
+                    android:id="@+id/invalid_fname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Invalid first name"
+                    android:visibility="invisible"
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearlay6"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edtext_lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/style_edtext"
+                    android:hint="Last Name" />
+                <TextView
+                    android:id="@+id/invalid_lname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Invalid last name"
+                    android:visibility="invisible"
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="200dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:text="Submit"
+            android:onClick="submit"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridlay" />
+
+    </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

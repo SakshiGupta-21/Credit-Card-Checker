@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CreditCardChecker</string>
+    <string name="continue2">Continue</string>
+    <string name="enter_your_credit_card_details">Enter your Credit Card details</string>
+    <string name="pay_success">Payment Successful</string>
+    <string name="cancel" />
+    <string name="fire">OK</string>
+    <string name="Payment_Successful">Payment Successful</string>
+    <string name="ok">OK</string>
+    <string name="em"/>
+</resources>
